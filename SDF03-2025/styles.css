@@ -1,0 +1,164 @@
+
+
+:root {
+    font-size: 10px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    .profile-user-name{
+        font-family: '  monospace';
+    }
+    .profile-stats{
+        li{
+            list-style: none;
+        }
+    }
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    .gallery-image{
+        border: 1px solid rgb(17, 202, 125);
+    }
+    li{
+        list-style: none;
+    }
+    .gallery-item{
+        position: relative;
+    }
+    ul{
+        position: absolute;
+        opacity: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom:0;
+        left: 0;
+        gap: 10px;
+        color: white;
+        backdrop-filter: blur(1px);
+        background-color: rgba(15, 15, 44, 0.082);
+        height: 98% ;
+        width: 100% ;
+
+    }
+    .gallery-item:hover ul{
+        opacity: 1;
+    }
+
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    min-height: 100vh;
+    background-color: #fafafa;
+    color: #262626;
+    padding-bottom: 3rem;
+    
+}
+
+.header_container{
+    display: flex;
+    justify-content: center;
+    .area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            height: 25px;
+            border-radius: 5px;
+            background-color: rgb(39, 182, 115);
+            color: white;
+        }
+    }
+    
+
+    
+    img{
+        height: 120px;
+        border: solid rgb(49, 184, 110);
+        border-radius: 50%;
+    }
+    .profile-stat-count{
+        font-weight: bolder;
+    }
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        height: 300px;
+        width: 150px;
+    }
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px ;
+    }
+}
+
+img {
+    display: block;
+}
+
+.profile{
+    display: flex;
+    ul{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.new{
+    display: flex;
+    flex-direction: column;
+}
+
+.area{
+    display: flex;
+}
+
+
+.loader {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: 6px solid #ccc; 
+    border-top-color: #3498db; 
+    border-radius: 50%; 
+    animation: spin 1s linear infinite; 
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
